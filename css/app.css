@@ -195,6 +195,11 @@ p {
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid white; }
+  .c-section a {
+    color: white;
+    text-decoration: none; }
+    .c-section a:hover {
+      text-decoration: underline; }
 
 .c-header, .c-footer {
   background-color: #D65D53;
