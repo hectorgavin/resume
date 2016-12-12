@@ -1,0 +1,41 @@
+.o-label {
+  float: left;
+  height: 18px;
+  width: 28px;
+  position: absolute;
+  left: -40px;
+  top: 2px;
+  span {
+    float: left;
+    &:first-child {
+      height: 18px;
+      width: 20px;
+      background-color: #D65D53;
+      position: relative;
+      z-index: 2;
+    }
+    &:nth-child(2) {
+      height: 0;
+      width: 0;
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+      border-left: 8px solid #D65D53;
+      position: relative;
+      z-index: 2;
+    }
+    &:last-child {
+      height: 0;
+      width: 0;
+      border-top: 13px solid transparent;
+      border-right: 13px solid #F7F7F7;
+      border-bottom: 11px solid transparent;
+      position: absolute;
+      top: 5px;
+      left: 1px;
+    }
+  }
+
+  @include mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+@import "core";
+@import "intro";
+@import "nav";
+@import "sidebar";
+@import "section";
+
+.c-header, .c-footer {
+  background-color: $title;
+  width: 50%;
+  height: 65px;
+  line-height: 65px;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  span {
+    padding-left: 25px;
+  }
+}
+
+.c-footer {
+  margin-top: 25px;
+  margin-left: auto;
+}
+
+.c-resume {
+  float: right;
+  width: 67%;
+  padding-left: 25px;
+  border-left: 1px solid white;
+
+  @include mobile {
+    float: none;
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+}

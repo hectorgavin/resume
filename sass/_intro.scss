@@ -1,0 +1,49 @@
+.c-intro {
+  display: table;
+  padding: 50px 0 75px;
+
+  @include mobile {
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  &__name, &__summary {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+
+    @include mobile {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__name {
+    text-align: center;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+  &__img {
+    width: 230px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 27px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+  }
+  &__full-name {
+    font-size: 30px;
+    margin-bottom: 5px;
+    span {
+      color: $title;
+    }
+  }
+  &__position {
+    font-size: 1.5em;
+    font-style: italic;
+  }
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

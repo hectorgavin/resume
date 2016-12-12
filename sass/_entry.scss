@@ -1,0 +1,30 @@
+.c-entry {
+  &--with-date {
+    display: table;
+    .c-entry__date {
+      width: 70px;
+      padding-right: 20px;
+    }
+    .c-entry__date, .c-entry__content {
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+  &--grid {
+    @include flexbox;
+    @include flex-wrap(wrap);
+    .c-entry__content {
+      min-width: 190px;
+      margin: 5px;
+    }
+  }
+  &__title {
+    font-size: 15px;
+    font-weight: 600;
+    color: $title;
+  }
+  &__subtitle {
+    font-style: italic;
+    font-weight: 900;
+  }
+}
